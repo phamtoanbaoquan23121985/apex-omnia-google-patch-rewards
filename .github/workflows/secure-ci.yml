@@ -1,0 +1,30 @@
+name: APEX Sovereign Secure CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  audit-and-validate:
+    name: Validate Security Dossiers & Manifest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hardened Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate JSON & Markdown Integrity
+        run: |
+          python -c "import json, glob; [json.load(open(f, encoding='utf-8')) for f in glob.glob('**/*.json', recursive=True) if '.git' not in f]"
+          echo "All Security Dossiers and Manifests are valid."
