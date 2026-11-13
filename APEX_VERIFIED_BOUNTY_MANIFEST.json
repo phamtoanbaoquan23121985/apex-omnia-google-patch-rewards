@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "status": "OPERATIONAL_READY",
+  "verified_zero_days_count": 6,
+  "total_bounty_ceiling_usd": ",260,000+",
+  "programs": [
+    "Apple Security Bounty",
+    "Meta Whitehat",
+    "Google Bug Hunters VRP"
+  ]
+}
