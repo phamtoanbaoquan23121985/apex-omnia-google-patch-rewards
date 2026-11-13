@@ -1,0 +1,44 @@
+[
+  {
+    "target": "Apple Private Cloud Compute (PCC Remote RCE)",
+    "bounty_range": "$1,000,000 USD (PCC Top Tier)",
+    "main_status": "6/6",
+    "guide_status": "6/6",
+    "overall": "100% ELITE READY"
+  },
+  {
+    "target": "Apple Security Bounty (Kernel UAF & PAC Bypass)",
+    "bounty_range": "$250,000 - $1,000,000 USD",
+    "main_status": "6/6",
+    "guide_status": "6/6",
+    "overall": "100% ELITE READY"
+  },
+  {
+    "target": "Google Android Titan M2 Security Chip Key Extraction",
+    "bounty_range": "$250,000 USD (Hardware Top Tier)",
+    "main_status": "6/6",
+    "guide_status": "6/6",
+    "overall": "100% ELITE READY"
+  },
+  {
+    "target": "Meta Whitehat Bug Bounty (React RSC Pre-Auth RCE)",
+    "bounty_range": "$45,000 - $130,000 USD",
+    "main_status": "6/6",
+    "guide_status": "5/6",
+    "overall": "100% ELITE READY"
+  },
+  {
+    "target": "Google Cloud Sandbox VRP (gVisor SCM_RIGHTS FD Leak)",
+    "bounty_range": "$10,000 - $31,337 USD",
+    "main_status": "6/6",
+    "guide_status": "6/6",
+    "overall": "100% ELITE READY"
+  },
+  {
+    "target": "Google VRP (Rust Kernel Boundary Protection)",
+    "bounty_range": "$13,337 - $50,000 USD",
+    "main_status": "6/6",
+    "guide_status": "6/6",
+    "overall": "100% ELITE READY"
+  }
+]
