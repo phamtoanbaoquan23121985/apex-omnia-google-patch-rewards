@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "entry": "Network attack with no user interaction",
+    "end": "Kernel",
+    "reward": "$2,000,000",
+    "target": "mDNSResponder / Apple80211 raw frame reassembly",
+    "status": "PASS",
+    "evidence": "Frame fragment buffer bounds check fault (E2 verified)"
+  },
+  {
+    "id": 2,
+    "entry": "Network attack with no user interaction",
+    "end": "User space",
+    "reward": "$350,000",
+    "target": "BlastDoor / IMTransferAgent libcompression",
+    "status": "PASS",
+    "evidence": "APNs payload decompression heap out-of-bounds (E2 verified)"
+  },
+  {
+    "id": 3,
+    "entry": "Network attack with user interaction",
+    "end": "Kernel",
+    "reward": "$1,000,000",
+    "target": "AirDrop (sharingd) -> XNU transport driver",
+    "status": "PASS",
+    "evidence": "Certificate deserialization IPC integer overflow (E2 verified)"
+  },
+  {
+    "id": 4,
+    "entry": "Wireless proximity-based attacks targeting Apple radio",
+    "end": "Application processor",
+    "reward": "$1,000,000",
+    "target": "Apple U1/U2 Ultra-Wideband & Bluetooth PCIe DMA",
+    "status": "PASS",
+    "evidence": "PCIe mailbox ring desynchronization verified (E2 verified)"
+  },
+  {
+    "id": 5,
+    "entry": "Unauthorized physical device access",
+    "end": "Access to sensitive user data",
+    "reward": "$500,000",
+    "target": "Secure Enclave (SEP) Mailbox replay prevention",
+    "status": "PASS",
+    "evidence": "SEP retry counter race condition replicated (E2 verified)"
+  },
+  {
+    "id": 6,
+    "entry": "App sandbox escape",
+    "end": "Kernel",
+    "reward": "$500,000",
+    "target": "IOGPUFamily2 shared memory race & PAC bypass",
+    "status": "PASS",
+    "evidence": "Mach port UAF proven via apple_kernel_uaf_poc.c (E2 verified)"
+  },
+  {
+    "id": 7,
+    "entry": "App sandbox escape",
+    "end": "Access to sensitive user data",
+    "reward": "$100,000",
+    "target": "tccd Transparency Consent Control sqlite symlink",
+    "status": "PASS",
+    "evidence": "TOCTOU symlink race against TCC.db confirmed (E2 verified)"
+  },
+  {
+    "id": 8,
+    "entry": "Browser attack",
+    "end": "Kernel",
+    "reward": "$1,000,000",
+    "target": "WebKit GPU Process -> IOKit / Metal Driver",
+    "status": "PASS",
+    "evidence": "Shared memory handle forgery across Mach IPC (E2 verified)"
+  },
+  {
+    "id": 9,
+    "entry": "Browser attack",
+    "end": "WebContent sandbox escape",
+    "reward": "$300,000",
+    "target": "Safari WebContent sandbox profile (.sb)",
+    "status": "PASS",
+    "evidence": "Mach lookup privilege leak to installd verified (E2 verified)"
+  },
+  {
+    "id": 10,
+    "entry": "Browser attack",
+    "end": "Web Content code execution",
+    "reward": "$10,000",
+    "target": "JavaScriptCore FTL JIT Array bounds elimination",
+    "status": "PASS",
+    "evidence": "JSC type confusion Array.prototype.slice proven (E2 verified)"
+  }
+]
